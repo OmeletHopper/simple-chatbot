@@ -16,8 +16,10 @@ const char * Output(char Input[MAX_LENGTH])
   if (strstr(Input, "speechless") != NULL) return "Probably.\n";
   if (strstr(Input, "yes") != NULL)        return "Ok then.\n";
   if (strstr(Input, "help") != NULL)       return "Now why would I want to do that?\n";
-  if (strstr(Input, "made you") != NULL)   return "I was made by Jonny Archer.\n";
-  return "I don't understand.\n"; // If there are no matches
+  if (strstr(Input, "made you") != NULL)   return "I was made by Jon Archer.\n";
+  if (strstr(Input, "are you") != NULL)   return "Decent.\n";
+
+  return "Sorry, I don't understand.\n"; // If there are no matches
 }
 
 const char * helloOutput()
